@@ -55,9 +55,9 @@ const controller = {
 					category
 				}
 			}
-			return product
+			return product 
 		})
-		fs.writeFileSync(path.join(__dirname, '..', 'data', 'productsDataBase.json'),JSON.stringify(productModify), 'utf-8')
+		fs.writeFileSync(path.join(__dirname, '..', 'data', 'productsDataBase.json'),JSON.stringify(productModify,null,3),'utf-8')
 		return res.redirect('/')
 	},
 
