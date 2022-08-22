@@ -7,6 +7,6 @@ const {index, search} = require('../controllers/mainController');
 
 router
     .get('/', index)
-    .get('/search', search); 
+    .get('/search', search)
 
 module.exports = router;
