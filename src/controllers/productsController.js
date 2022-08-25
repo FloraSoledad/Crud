@@ -59,7 +59,7 @@ const controller = {
 		})
 		storeProducts(productsModify)
 
-		return res.redirect('/products/detail/' + req.params.id) 
+		return res.redirect('/products/detail/' + req.params.id)  
 	},
 
 	// Delete - Delete one product from DB
