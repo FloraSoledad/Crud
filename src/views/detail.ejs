@@ -24,13 +24,12 @@
 				</div>
 				<div class="col-12 col-lg-4">
 					<article class="product-detail-info">
-
 						<h2 class="product-detail-title"><%= product.name %> </h2>
 						<% if (product.discount > 0) { %>
 							<p class="product-detail-price small">
 								<span>$<%= product.price %> </span>
 								/
-								<b><%= product.discount %>  OFF</b>
+								<b><%= product.discount %>% OFF</b>
 							</p>
 							<p class="product-detail-price">
 								$<%= toThousand(product.price -(product.price * product.discount) /100) %>
